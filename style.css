@@ -1,0 +1,272 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.hero{
+    background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.8)), url(images/background_1.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    width:100%;
+}
+nav{
+    height: 60px;
+    background-color: rgb(216, 216, 216);
+    display: flex;
+    justify-content: space-between;
+}
+nav img{
+    width: 3.4rem;
+    margin-left: 20px;
+    transition: .2s;
+}
+nav img:hover{
+    width: 3.5rem;
+}
+nav ul{
+    display: flex;
+    padding-right: 30px;
+}
+nav ul li{
+    list-style-type: none;
+    padding: 20px;
+    /* padding-top: 20px; */
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    transition: 0.6s;
+}
+nav ul li a:hover{
+    color: brown;
+}
+.content{
+    text-align: right;
+    padding-right: 100px;
+    padding-top: 10rem;
+    color: rgb(248, 239, 239);
+}
+.content h1{
+    font-weight: 600;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.content p{
+    font-weight: 400;
+    font-size: 16px;
+    padding-top: 30px;
+}
+.content a{
+    text-decoration: none;
+    border: 2px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 40px;
+    transition: 0.7s;
+}
+.content a:hover{
+    background-color: #fff;
+    color: rgb(0, 0, 0);
+}
+
+/* projects */
+
+#projects{
+    background-image: linear-gradient(rgba(114, 114, 116, 0.9),rgba(0,0,0,0.4)), url(images/background2.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    width:100%;
+    position: relative;
+}
+#projects nav{
+    background-color: rgb(128, 128, 128);
+}
+#projects h2{
+    font-size: 42px;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 50px;
+}
+#projects p{
+    text-align: center;
+    font-size: 8px;
+    padding-top: 20%;
+}
+
+/* registration */
+
+.regd{
+    background-image: linear-gradient(rgba(114, 114, 116, 0.9),rgba(0,0,0,0.4)), url(images/background3.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    width:100%;
+    position: relative;
+}
+.regd nav{
+    background-color: rgb(115, 114, 114);
+}
+.form-box{
+    width: 335px;
+    height: 380px;
+    position: relative;
+    margin: 2% auto;
+    background: #fff;
+    padding: 5px;
+    overflow: hidden;
+}
+.button-box{
+    width: 220px;
+    margin: 30px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #ff61241f;
+    border-radius: 20px;
+}
+.toggle-btn{
+    padding: 18px 28px;
+    cursor: pointer;
+    background-color: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+}
+#btn{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: linear-gradient(to right, #ff105f, #ffad06);
+    border-radius: 20px;
+    transition: 0.5s;
+}
+.input-group{
+    top: 180px;
+    position: absolute;
+    width: 250px;
+    transition: .5s;
+}
+.input-field{
+    width: 100%;
+    padding: 8px 0;
+    margin: 3px 0;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+}
+.submit-btn{
+    width: 80%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: linear-gradient(to right, #ff105f, #ffad06);
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+}
+.check-box{
+    margin: 20px 10px 30px 0;
+}
+span{
+    color: #777;
+    font-size: 12px;
+    bottom: 64px;
+    position: absolute;
+}
+#login{
+    left: 50px;
+}
+#register{
+   left: 450px;
+}
+
+/* contact */
+
+.contact{
+    background-image: linear-gradient(rgba(75, 75, 97, 0.4),rgba(0,0,0,0.4)), url(images/background4.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    width:100%;
+    position: relative;
+}
+.contact nav{
+    background-color: #999;
+}
+.contact-info{
+    text-align: center;
+    position: relative;
+    padding-top: 10rem;
+}
+.contact p{
+    word-spacing: 6px;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+/* for small screen devices */
+
+@media only screen and (max-width: 770px){
+
+    .hero{
+        background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.8)), url(images/bg1.jpg);
+        background-size: cover;
+        background-position: center;
+        min-height: 100vh;
+        width:100%;
+    }
+    nav, .contact nav, #project nav, .regd nav{
+        height: 50px;
+        background-color: rgba(0,0,0,0.4);
+        /* display: flex; */
+        justify-content: space-between;
+    }
+    nav img{
+        width: 3rem;
+        margin-left: 16px;
+    }
+    nav ul{
+        padding-right: 10px;
+    }
+    nav ul li{
+        padding-right: 10px;
+        /* padding-top: 20px; */
+    }
+    nav ul li a{
+        color: rgb(255, 255, 255);
+        font-size: 13px;
+    }
+    .content{
+        text-align: left;
+        padding-top: 23rem;
+        padding-left: 20px;
+    }
+    .content h1{
+        font-weight: 600;
+        font-size: 56px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .content p{
+        font-size: 18px;
+    }
+    .content a{
+        background-color: #fff;
+        color: rgb(0, 0, 0);
+        padding: 5px 10px;
+        border-radius: 10px;
+    }
+    .form-box{
+        margin: 10rem auto;
+    }
+
+
+}
